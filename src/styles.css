@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~animate.css/animate.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,700;0,900;1,100&display=swap');
+
+:root {
+    --gris: #e1e1e1;
+    --rosa: #ea7e9c;
+}
+
+/************************************
+* 1. Vertical Scroll Custom Styles  *
+*************************************/
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 205, 205);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(202, 42, 42);
+  }
+
+.delay{
+  --animate-duration: 2.5s;
+}
+
+body{
+    overflow-x: hidden;
+}
+.bg-rosa{
+  background: var(--rosa)!important;
+}
+.rosa{
+  color: var(--rosa)!important;
+}
+
+.gradient{
+    background: -webkit-linear-gradient(-70deg ,#12c2e9,#c471ed,#f64f59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-container {
+    margin-top: 55px;
+    height: 95vh;
+    /*background-image: url('../src/assets/img/xd.png');
+    background-size: cover;
+    background-position: bottom center;*/
+}
