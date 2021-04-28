@@ -21,7 +21,7 @@ ul li{
     display: inline-block;
     margin-right: 10px;
 }
-h2, h1, p, small, span, h3, a{
+h2, h1, p, small, h3, a{
     font-family: 'Poppins';
     color:white;
 }
@@ -83,6 +83,7 @@ small{
     animation: scale 10s linear infinite;
     animation-delay: 1s;
     border-radius: 50%;
+    width: 50vw;
 }
 
 @keyframes scale{
@@ -105,5 +106,25 @@ small{
 
     100%{
         transform: scale(1);
+    }
+}
+
+.doodle{
+    animation: doodle 3s linear;
+    display: inline-block;
+    animation-delay: 1.2s;
+}
+
+@keyframes doodle{
+    0% {
+        transform: translateX(0px) skewX(0) ;
+    }
+
+    50% {
+        transform: translateX(30px) skewX(20deg);
+    }
+
+    100% {
+        transform: translateX(0px) skewX(0px);
     }
 }
